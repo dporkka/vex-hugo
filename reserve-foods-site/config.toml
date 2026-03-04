@@ -1,0 +1,25 @@
+baseURL = "https://reservefoods.com/"
+languageCode = "en-us"
+title = "Reserve Foods"
+enableRobotsTXT = true
+summaryLength = 24
+
+[params]
+  description = "Long-shelf-life nutrition you can depend on."
+  plausibleDomain = "reservefoods.com"
+  convertKitFormId = "1234567"
+  stripeOneTimeUrl = "https://buy.stripe.com/test_one_time"
+  stripeSubscriptionUrl = "https://buy.stripe.com/test_subscription"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.7
+  filename = "sitemap.xml"
+
+[outputs]
+  home = ["HTML", "RSS", "SITEMAP"]
