@@ -39,7 +39,3 @@ If your first order is not right for your use case, contact support.
   <a class="btn btn-secondary" href="https://buy.stripe.com/test_one_time">One-time purchase</a>
 </div>
 
-```html
-<a href="https://buy.stripe.com/test_one_time" class="btn">One-time purchase</a>
-<a href="https://buy.stripe.com/test_subscription" class="btn">Subscription purchase</a>
-```
