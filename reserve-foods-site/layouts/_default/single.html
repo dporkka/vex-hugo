@@ -1,0 +1,24 @@
+{{ define "main" }}
+<section class="section narrow">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+</section>
+{{ if eq .RelPermalink "/reserve-bar/" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Reserve Bar",
+  "brand": "Reserve Foods",
+  "description": "Long-shelf-life nutrition bars for preparedness, travel, and backup meals.",
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "USD",
+    "lowPrice": "39.00",
+    "highPrice": "129.00",
+    "availability": "https://schema.org/InStock"
+  }
+}
+</script>
+{{ end }}
+{{ end }}

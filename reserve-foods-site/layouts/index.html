@@ -1,0 +1,18 @@
+{{ define "main" }}
+{{ partial "hero.html" . }}
+<section class="section">
+  <h2>Use Cases</h2>
+  <div class="grid three">
+    <article><h3>Emergency preparedness</h3><p>Reliable calories for home kits and uncertainty.</p></article>
+    <article><h3>Travel</h3><p>Compact nutrition for flights, road trips, and delays.</p></article>
+    <article><h3>Outdoor adventure</h3><p>Durable fuel for hiking, camping, and remote days.</p></article>
+    <article><h3>Busy schedules</h3><p>Daily backup meals when life runs ahead of plan.</p></article>
+  </div>
+</section>
+{{ partial "product-card.html" . }}
+<section class="section"><h2>Science-driven formulation</h2><p>Reserve Bars are developed for satiety, storage stability, and practical field use. <a href="/science/">Explore the science.</a></p></section>
+{{ partial "subscription-plans.html" . }}
+{{ partial "testimonials.html" . }}
+{{ partial "faq.html" . }}
+{{ partial "cta.html" . }}
+{{ end }}
